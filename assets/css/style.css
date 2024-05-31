@@ -1,0 +1,233 @@
+body::-webkit-scrollbar {
+    width: 12px;               /* ширина всей полосы прокрутки */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background:#002137;        /* цвет зоны отслеживания */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #003366;    /* цвет бегунка */
+    border-radius: 20px;       /* округлось бегунка */
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+.navbar{
+    background-color: #002137;
+    height: 80px;
+    padding: 0.5rem;
+}
+
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+    color:#ffffff;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    font-size: 24px;
+    color: #ffffff;
+    transition: 0.3s color;
+}
+
+.btn-close{
+    background-color: #fff;
+}
+
+
+.navbar-toggler:focus .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.offcanvas-end {
+    background-color: #002137;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.offcanvas-title{
+    color: #ffffff;
+}
+
+.navbar-toggler-icon{
+    background-color: #fff;
+    border-radius: 9px;
+}
+
+.nav-link{
+    color: #f8f8f8;
+    font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link.active{
+    color: #ffffff;
+}
+
+.hero-section {
+    background: url(../img/WANEELLA\ pixel\ art_\ Photo.gif) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 999px;
+    overflow-x: hidden;
+}
+
+.hero-section .container{
+  height: 100vh;
+  position: relative; 
+  padding-top: 200px; 
+}
+
+
+.about-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .fact-box {
+    background-color: #0055b3; 
+    border-radius: 10px; 
+    transition: transform 0.3s ease-in-out; /* Анимация при наведении */
+  }
+
+  .fact-box h3 {
+    font-size: 2rem; 
+    margin-bottom: 0;
+  }
+
+  .fact-box p {
+    font-size: 1rem;
+  }
+
+  .fact-box:hover {
+    transform: translateY(-10px); /* Поднимаем блок при наведении */
+    box-shadow: 0 4px 8px rgba(133, 71, 71, 0.115); /* Добавляем тень при наведении */
+  }
+
+  .tech-stack .tech-card {
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .tech-stack .tech-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+
+.contact-info {
+    background-color: #002851;
+    border-radius: 15px;
+}
+.contact-item {
+    padding: 0.5rem 0;
+}
+.form-control, .form-check-input, .btn-primary {
+    background-color: #004080;
+    color: #fff;
+    border: none;
+}
+.btn-primary {
+    color: white;
+    border-color: #0d6efd;
+}
+.btn-primary:hover {
+    background-color: #0d6efd;
+    border-color: #004080;
+}
+
+.rounded-square {
+  border-radius: 10px;
+}
+
+.animate-button {
+  transition: transform 0.3s ease, box-shadow 0.2s ease;
+}
+
+.animate-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.request-btn {
+  background-color: #ffc107;
+  color: #000;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.request-btn:hover {
+  background-color: #e0a800;
+  text-decoration: none;
+}
+
+.request-btn i {
+  margin-left: 10px;
+  transition: margin-left 0.3s ease;
+}
+
+.request-btn:hover i {
+  margin-left: 15px;
+}
+
+/*  модальное окно */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6); 
+}
+
+.modal-content {
+  background-color: #003366;
+  margin: 0;
+  padding: 2rem;
+  border: none;
+  width: auto;
+  max-width: 900px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+.close-modal {
+  color: #ccc;
+  position: absolute; 
+  top: 10px;
+  right: 10px;
+
+}
+
+
+/* Стили для планшетов */
+@media (max-width: 768px) {
+  .rounded-square {
+    padding: 3rem; /* Увеличение отступа */
+    max-height: none; /* Убираем ограничение по высоте */
+    text-align: center; /* Центрирование текста */
+  }
+  .rounded-square h3 {
+    margin-top: 1rem; /* Дополнительный отступ сверху */
+  }
+}
+
+/* Стили для мобильных телефонов */
+@media (max-width: 360px) {
+  .rounded-square {
+    padding: 2rem; /* Уменьшаем отступ */
+    max-height: none; /* Убираем ограничение по высоте */
+    text-align: center; /* Центрирование текста */
+    margin-bottom: 1rem; /* Отступ снизу */
+  }
+}
