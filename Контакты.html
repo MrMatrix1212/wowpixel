@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Веб-студия Ивана Башлыкова</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body style="background-color: #002137;" >
+  <!-- header -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand me-auto" href="Главная.html">wow.pixel</a>
+      <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">wow.pixel</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" aria-current="page" href="Главная.html">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="О нас.html">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="Услуги.html">Услуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="Контакты.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="contact-section py-5" style="color: white;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <h2>Оставить заявку</h2>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Имя</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="details" class="form-label">Расскажите, что нужно сделать и в какой бюджет?</label>
+              <textarea style="resize: none;" class="form-control" id="details" rows="3"></textarea>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="agreement" required>
+              <label class="form-check-label" for="agreement">Согласен на обработку моих персональных данных и с
+                политикой обработки ПД</label>
+            </div>
+            <button type="submit" class="btn btn-primary animate-button">Отправить заявку</button>
+          </form>
+          <div id="myModal" class="modal">
+            <!-- Контент модального окна -->
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <p>Ваша заявка успешно отправлена</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+          <h3>Позвонить/Написать</h3>
+          <div class="contact-info p-4">
+            <div class="card contact-item my-2">
+              <div class="card-body">
+                <i class="fas fa-phone" style="color: #0dcaf0;"></i> +7 996 616-67-83
+              </div>
+            </div>
+            <div class="card contact-item my-2">
+              <div class="card-body">
+                <i class="fas fa-envelope" style="color: #ffc107;"></i> MAIL@WPXL.RU
+              </div>
+            </div>
+            <div class="card contact-item my-2">
+              <div class="card-body d-flex align-items-center justify-content-center">
+                <i class="fab fa-telegram" style="color: #0088cc;"></i> TELEGRAM
+              </div>
+            </div>
+            <div class="card contact-item my-2">
+              <div class="card-body">
+                <i class="fab fa-whatsapp" style="color: #25d366;"></i> WHATSAPP
+              </div>
+            </div>
+          </div>
+        </div>
+        <style>
+          .contact-info .card {
+            background-color: #004080;
+            color: #ffffff;
+          }
+
+          .contact-info .card-body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .contact-item {
+            border-radius: 10px;
+            margin: 10px 0;
+          }
+
+          .contact-item i {
+            margin-right: 10px;
+          }
+        </style>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="footer text-light py-3" style="background-color: #002137; margin-top: 70px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-3 col-lg-2">
+          <a class="navbar-brand mb-3 mb-md-0" href="Главная.html">wow.pixel</a>
+        </div>
+        <div class="col-12 col-md-9 col-lg-10 d-flex justify-content-end">
+
+          <ul class="nav flex-column flex-md-row">
+            <li class="nav-item">
+              <a class="nav-link px-2" href="Главная.html">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2" href="О нас.html">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2" href="Услуги.html">Услуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2" href="Контакты.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script src="https://kit.fontawesome.com/31e76e9713.js" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Получение модального окна
+      var modal = document.getElementById("myModal");
+      
+      // Получение кнопки, открывающей модальное окно
+      var btn = document.querySelector(".btn-primary");
+      
+      // Получение элемента <span>, который закрывает модальное окно
+      var span = document.getElementsByClassName("close-modal")[0];
+      
+      // Получение формы для последующей очистки
+      var form = document.querySelector("form");
+      
+      // Когда пользователь нажимает кнопку, открыть модальное окно
+      btn.onclick = function(event) {
+        event.preventDefault();
+        modal.style.display = "flex"; // Изменено на flex для центрирования
+      };
+      
+      // Когда пользователь нажимает на <span> (x), закрыть модальное окно
+      span.onclick = function() {
+        modal.style.display = "none";
+        form.reset(); // Добавлено очищение формы
+      };
+      
+      // Когда пользователь нажимает в любом месте вне модального окна, это тоже его закроет
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+          form.reset(); // Добавлено очищение формы
+        }
+      };
+    });
+    </script>
+    
+    
+</html>
